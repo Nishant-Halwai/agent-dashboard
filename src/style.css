@@ -343,7 +343,7 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 250px 10% 60px;
   position: relative;
   overflow: hidden;
 }
