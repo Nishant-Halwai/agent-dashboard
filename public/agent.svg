@@ -1,0 +1,37 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Glow Filter -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="cyber-grad" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Central "Brain/Core" -->
+  <circle cx="250" cy="250" r="100" stroke="url(#cyber-grad)" stroke-width="4" fill="rgba(15, 23, 42, 0.8)" filter="url(#glow)"/>
+  
+  <!-- Orbiting Rings -->
+  <ellipse cx="250" cy="250" rx="180" ry="60" stroke="#3b82f6" stroke-width="2" stroke-opacity="0.5" transform="rotate(30 250 250)"/>
+  <ellipse cx="250" cy="250" rx="180" ry="60" stroke="#8b5cf6" stroke-width="2" stroke-opacity="0.5" transform="rotate(-30 250 250)"/>
+  <circle cx="250" cy="250" r="140" stroke="white" stroke-width="1" stroke-dasharray="10 20" stroke-opacity="0.3"/>
+
+  <!-- Tech Dots/Nodes -->
+  <circle cx="250" cy="250" r="20" fill="#f8fafc" filter="url(#glow)"/>
+  <circle cx="250" cy="150" r="8" fill="#3b82f6"/>
+  <circle cx="350" cy="250" r="8" fill="#8b5cf6"/>
+  <circle cx="250" cy="350" r="8" fill="#3b82f6"/>
+  <circle cx="150" cy="250" r="8" fill="#8b5cf6"/>
+  
+  <!-- Connecting Lines -->
+  <path d="M250 230 L250 158" stroke="url(#cyber-grad)" stroke-width="2"/>
+  <path d="M270 250 L342 250" stroke="url(#cyber-grad)" stroke-width="2"/>
+  <path d="M250 270 L250 342" stroke="url(#cyber-grad)" stroke-width="2"/>
+  <path d="M230 250 L158 250" stroke="url(#cyber-grad)" stroke-width="2"/>
+</svg>

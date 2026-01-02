@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Landing Page</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <nav class="navbar">
+      <div class="logo">AI Agents</div>
+      <div class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#showcase">Showcase</a>
+      </div>
+      <button class="cta-small">Get Started</button>
+    </nav>
+
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title fade-in-left">Streamline Intelligence <span class="gradient-text">with</span> AgentHub
+        </h1>
+        <p class="hero-subtitle fade-in-left delay-200">
+          “AgentHub is your central dashboard to manage, monitor, and launch AI agents with ease. Streamline
+          intelligence and simplify workflows—all in one smart hub.”
+        </p>
+        <div class="hero-buttons fade-in-up delay-200">
+          <button class="cta-primary pulse-animation">Explore Now</button>
+          <button class="cta-secondary">Learn More</button>
+        </div>
+      </div>
+      <div class="hero-visual fade-in-right delay-200">
+        <img src="/agent.svg" alt="AI Agent" class="agent-image floating-khal-animation" />
+      </div>
+    </section>
+
+
+    <section id="showcase" class="cards-section">
+      <div class="section-header fade-in-on-scroll">
+        <h2>AI Agent Showcase</h2>
+        <p>Discover our suite of intelligent agents designed to automate your workflow.</p>
+      </div>
+      <div class="cards-grid" id="cards-container">
+        <!-- Cards will be injected by main.js -->
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 AgentHub. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="/privacy.html" target="_blank">Privacy Policy</a>
+          <a href="/terms.html" target="_blank">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
