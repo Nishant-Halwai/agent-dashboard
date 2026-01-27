@@ -349,19 +349,19 @@ body::before {
 }
 
 .hero-content {
-  max-width: 50%;
+  max-width: 70%;
   z-index: 2;
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   line-height: 1.1;
   margin-bottom: 1.5rem;
   font-weight: 800;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: #94a3b8;
   margin-bottom: 2rem;
   max-width: 90%;
@@ -407,8 +407,8 @@ body::before {
 /* Hero Visual */
 .hero-visual {
   position: relative;
-  width: 40%;
-  height: 400px;
+  width: 60%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
