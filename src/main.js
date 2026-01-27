@@ -6,70 +6,70 @@ const cardsData = [
     desc: "Manages customer onboarding and policy creation",
     icon: "🛡️",
     image: "/aml.png",
-    url: "#"
+    url: "/chatbot-policy-onboarding.html"
   },
   {
     title: "RiskAssessment Agent",
     desc: "Evaluates risk for underwriting",
     icon: "🛡️",
     image: "/aml.png",
-    url: "#"
+    url: "/chatbot-risk-assessment.html"
   },
   {
     title: "PremiumCalculator Agent",
     desc: "Calculates insurance premiums",
     icon: "📄",
     image: "/policy.png",
-    url: "#"
+    url: "/chatbot-premium-calculator.html"
   },
   {
     title: "ClaimIntake Agent",
     desc: "Handles claim submission",
     icon: "💰",
     image: "/disbursement.png",
-    url: "#"
+    url: "/chatbot-claim-intake.html"
   },
   {
     title: "FraudDetection Agent",
     desc: "Detects fraudulent claims",
     icon: "🔁",
     image: "/duplicate.png",
-    url: "#"
+    url: "/chatbot-fraud-detection.html"
   },
   {
     title: "ClaimProcessing Agent",
     desc: "Processes valid claims",
     icon: "🔗",
     image: "/integration.png",
-    url: "#"
+    url: "/chatbot-claim-processing.html"
   },
   {
     title: "ComplianceReporter Agent",
     desc: "Ensures regulatory compliance",
     icon: "⚖️",
     image: "/osce.png",
-    url: "#"
+    url: "/chatbot-compliance-reporter.html"
   },
   {
     title: "CustomerSupport Agent",
     desc: "Provides customer assistance",
-    icon: "�",
+    icon: "💬",
     image: "/summary.png",
-    url: "#"
+    url: "/chatbot-customer-support.html"
   },
   {
     title: "RenewalManager Agent",
     desc: "Manages policy renewals",
     icon: "🕵️",
     image: "/fraud.png",
-    url: "#"
+    url: "/chatbot-renewal-manager.html"
   },
   {
     title: "FeedbackLoop Agent",
     desc: "Improves system accuracy",
     icon: "🎧",
     image: "/bot.png",
-    url: "#"
+    url: "/chatbot-feedback-loop.html"
   },
 ];
 
@@ -92,7 +92,7 @@ const renderCards = () => {
                 <div class="card-icon">${card.icon}</div>
                 <h3 class="card-title">${card.title}</h3>
                 <p class="card-desc">${card.desc}</p>
-                <a href="${card.url}" class="card-link">Dummy URL</a>
+                <a href="${card.url}" class="card-link">Chat Now →</a>
             </div>
         </div>
     `).join('');
